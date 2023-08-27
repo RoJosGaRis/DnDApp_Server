@@ -17,8 +17,8 @@ db.once("open", () => {
 app.use(express.json());
 app.use(cors());
 
-const subscribersRouter = require("./routes/subscribers");
-app.use("/subscribers", subscribersRouter);
+const creatureRouter = require("./routes/creatures");
+app.use("/creatures", creatureRouter);
 
 app.listen(4000, () => {
   console.log("Server is running on port 27017");

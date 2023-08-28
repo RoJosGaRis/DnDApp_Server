@@ -1,11 +1,39 @@
-GET http://localhost:4000/subscribers
+GET http://localhost:4000/creatures/names
 
 ###
 
-POST http://localhost:4000/subscribers
+GET http://localhost:4000/creatures
+
+###
+
+DELETE http://localhost:4000/creatures/64ebcfe334561368ca8de74d
+
+###
+
+POST http://localhost:4000/creatures
 Content-Type: application/json
 
 {
-  "name": "Amazing Person",
-  "subscribedToChanel": "Web Dev"
+  "name": "ashaihaiosdihasidhiahsid",
+  "race": "Medium aberration",
+  "alignment": "Neutral Evil",
+  "armorClass": 15,
+  "speed": "30 ft.",
+  "hitPoints": 45,
+  "abilityScores": {
+    "strength": {"value": 0, "modifier": 2},
+    "dexterity": {"value": 0, "modifier": 3},
+    "constitution": {"value": 0, "modifier": 3},
+    "intelligence": {"value": 0, "modifier": 1},
+    "wisdom": {"value":0, "modifier": 0},
+    "charisma": {"value": 8, "modifier": -1}
+  },
+  "skills": "Arcana/+3$Insight/+4$Perception/+2$Stealth/+4",
+  "savingThrows": " ",
+  "senses": " ",
+  "languages": "Undercommon",
+  "challenge": "2",
+  "featuresAndTraits": "Keen Sight//The nothic has advantage on Wisdom (Perception) checks that rely on sight.",
+  "actions": " ",
+  "treasure": "3 gold"
 }
